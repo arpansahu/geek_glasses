@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.js' %}"/>
+    <title>CHEW and CHEER</title>
+
+    {% include 'snippets/header.html' %}
+
+</head>
+<body>
+    <!--Body-->
+    <style type="text/css">
+        .main{
+            min-height: 100vh;
+        }
+
+    </style>
+    <div class="main">
+
+
+            {% block content %}
+
+
+            {% endblock %}
+
+
+    </div>
+
+
+
+    {% block javascript %}
+
+    {% endblock javascript%}
+    <!--End Body -->
+
+
+</body>
+
+                <footer style="
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    padding: 20px 15px;
+                    width: 100%;
+                    margin-top: 100px">
+                     {% include 'snippets/footer.html' %}
+                </footer>
+
+</html>

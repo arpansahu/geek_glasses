@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="row " style="padding: 100px" >
+        {% if request.user.is_authenticated %}
+            Welcome, {{ request.user }}
+        {% else %}
+            <p>
+                <a class="btn btn-outline-primary" href="{% url 'login' %}">Login to View The Entire Home Page</a>
+            </p>
+        {% endif %}
+    </div>
+
+
+{% endblock %}

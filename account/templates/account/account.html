@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style type="text/css" >
+
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+
+    }
+
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .h3  {
+    text-align: center;
+  }
+
+</style>
+
+
+    <form class="form-signin" method="post">{% csrf_token %}
+        <h1 class="h3 mb-3 font-weight-normal">My Account</h1>
+        {% csrf_token %}
+        {% for field in account_form %}
+            <p>
+
+                {{ field.label_tag }}
+                {{ field }}
+
+                {% if field.help_text %}
+                    <small style="color:grey;">{{ field.help_text }}</small>
+                {% endif %}
+
+            </p>
+        {% endfor %}
+
+        {% for field in account_form %}
+            {% for error in field.field.errors %}
+                <small style="color:grey;">{{ error }}</small>
+            {% endfor %}
+
+            {% if account_form.non_field_errors %}
+                <div style="color: red;">
+                    <p>{{ account_form.non_field_errors }}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Save Changes</button>
+    </form>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

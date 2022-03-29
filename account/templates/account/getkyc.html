@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+    <style type="text/css" >
+    a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+    a:visited {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: black;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: black;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+
+    }
+
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .h3  {
+    text-align: center;
+  }
+
+</style>
+
+
+<div class="form-signin" >
+  <h1 class="h3 mb-3 font-weight-normal">Get Kyc Done</h1>
+   <h6>Email us : admin@arpansahu.me</h6><br>
+    <h6>Call us : at 0000000000</h6><br>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      <a href="whatsapp://send?abid=000000000&text=Hello%2C%20World!"target="_blank">
+          <i class="fa fa-whatsapp" style="font-size:24px;color: black"></i>
+          Connect on Whatsapp
+      </a>
+    </button>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=connect.admin@arpansahu.me" target="_blank">
+          <i class="fa fa-envelope" style="font-size:24px"></i></i>
+          Connect on Email
+      </a>
+   </button>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      <a href="{% url 'logout' %}">
+          <i class="fas fa-user-check" style="font-size:24px"></i></i>
+          Login with another Account
+      </a>
+   </button>
+
+</div>
+
+
+
+{% endblock content %}

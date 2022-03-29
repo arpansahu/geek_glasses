@@ -1,2 +1,2 @@
 release: ./release-tasks.sh
-web: gunicorn djangoProject.wsgi
+web: gunicorn DjangoProject.wsgi

@@ -13,7 +13,7 @@ This project is implementation for the following topics related to technologies 
 6. Build Custom Templates for These Inbuilt Views
 7. Reset Password is working 
 8. If kyc is False then it will show you Get Kyc Details unless it will welcome you. By default every user is non kycied.
-9. If you want to kyc a person login to admin panel from here:  and  modify it
+9. If you want to kyc a person login to admin panel from here:  https://django-custom-auth-model.herokuapp.com/admin/ and  modify it
 
 ## Tech Stack
 

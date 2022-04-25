@@ -1,6 +1,5 @@
 
-# Django Project
-
+# Geek Glasses | Dajngo Custom Auth User Model from AbstractBaseUser
 This project is implementation for the following topics related to technologies used with Django
 
 -Implemented Complete Auth Using Custom Auth Model.

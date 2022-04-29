@@ -14,6 +14,10 @@ This project is implementation for the following topics related to technologies 
 8. If kyc is False then it will show you Get Kyc Details unless it will welcome you. By default every user is non kycied.
 9. If you want to kyc a person login to admin panel from here:  https://django-custom-auth-model.herokuapp.com/admin/ and  modify it
 
+-Deployed on Heroku
+
+1. Used Heroku Postgres 
+
 ## Tech Stack
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
